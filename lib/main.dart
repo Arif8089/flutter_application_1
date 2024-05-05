@@ -24,18 +24,20 @@ class ImageGalleryPage extends StatelessWidget {
       'url':
           'https://i0.wp.com/picjumbo.com/wp-content/uploads/magical-spring-forest-scenery-during-morning-breeze-free-photo.jpg?w=600&quality=80',
       'title': 'Nature',
+      'Desc': 'This is natural scenario',
     },
     {
       'url':
           'https://hips.hearstapps.com/hmg-prod/images/nature-quotes-landscape-1648265299.jpg?crop=0.676xw:1.00xh;0.148xw,0&resize=640:*',
       'title': 'Cityscape',
+      'Desc': 'This is natural scenario2',
     },
     {
       'url':
           'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi12XS-hBxkFf1IsqJTr9XPAaVZcftWlUwDuRuy5N6gw&s',
       'title': 'Mountains',
+      'Desc': 'This is natural scenario3',
     },
-    // Add more images with titles as needed
   ];
 
   @override
@@ -60,6 +62,7 @@ class ImageGalleryPage extends StatelessWidget {
                   builder: (context) => ImageDetailsPage(
                     imageUrl: images[index]['url'],
                     title: images[index]['title'],
+                    // Desc: images[index]['Desc'],
                   ),
                 ),
               );
@@ -116,20 +119,20 @@ class ImageDetailsPage extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Center(
-            child: Text(
-              title,
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 24.0,
-              ),
-            ),
-          ),
           SizedBox(height: 20.0),
           Center(
             child: Image.network(
               imageUrl,
               fit: BoxFit.contain,
+            ),
+          ),
+          Center(
+            child: Text(
+              'I am a hard-working and driven individual who isnt afraid to face a challenge. Im passionate about my work and I know how to get the job done. I would describe myself as an open and honest person who doesnt believe in misleading other people and tries to be fair in everything I do',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 16,
+              ),
             ),
           ),
         ],
