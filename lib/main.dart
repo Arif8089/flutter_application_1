@@ -62,7 +62,8 @@ class ImageGalleryPage extends StatelessWidget {
                   builder: (context) => ImageDetailsPage(
                     imageUrl: images[index]['url'],
                     title: images[index]['title'],
-                    // Desc: images[index]['Desc'],
+
+                    /// Desc: images[index]['Desc'],
                   ),
                 ),
               );
