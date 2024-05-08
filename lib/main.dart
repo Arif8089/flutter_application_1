@@ -41,7 +41,7 @@ class ImageGalleryPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Image Gallery'),
+        title: Text('Clickable Image Gallery '),
       ),
       body: GridView.builder(
         itemCount: images.length,
