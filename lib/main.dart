@@ -110,7 +110,7 @@ class ImageDetailsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Image Details'),
+        title: Text('Image Details App'),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
